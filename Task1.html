@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex w-screen h-screen">
+      <section class="w-2/4 flex flex-col px-52 py-10 sm:w-screen">
+        <div class="p-2">
+          <h1 class="text-4xl text-center my-4 p-2 font-bold">Login</h1>
+          <p class="text-center">
+            Enter your credential to access your account
+          </p>
+          <button
+            class="px-4 py-2 my-10 border flex gap-2 border-slate-200 dark:border-slate-700 -lg text-current-900 dark:text-slate-200 w-full"
+          >
+            <img
+              class="w-6 h-6"
+              src="https://www.svgrepo.com/show/475656/google-color.svg"
+              loading="lazy"
+              alt="google logo"
+            />
+            <span class="px-14 text-black sm:text-s">Login with Google</span>
+          </button>
+        </div>
+        <hr class="w-full bg-current" />
+        <p class="text-center relative -top-3">Or</p>
+
+        <div class="flex flex-col p-4">
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="email@gmail.com"
+            class="border-2 h-10"
+          />
+        </div>
+        <div class="flex flex-col p-3">
+          <div class="flex justify-between">
+            <label for="password">Password </label>
+            <p class="text-blue-500"><a href="#">Forget Password?</a></p>
+          </div>
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Password"
+            class="border-2 h-10"
+          />
+        </div>
+
+        <button class="btn btn--primary bg-blue-500 text-white h-12 m-3">
+          Login
+        </button>
+      </section>
+      <section class="flex w-2/4 px-8 py-10 pb-0 hidden lg:block">
+        <img
+          src="https://img.freepik.com/free-photo/young-happy-woman-with-good-idea-sign-white-shirt-full-portrait_186202-4377.jpg?w=360&t=st=1698328105~exp=1698328705~hmac=fbc4f3e23ad192c720ebf72d7539ce92f1dbb6403db0d4f757cadd10caff4a13"
+          alt="Girl Image"
+          class="h-full w-full"
+        />
+      </section>
+    </div>
+  </body>
+</html>
